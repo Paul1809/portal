@@ -1,2 +1,1 @@
 # Portal-de-noticias
-# portal
