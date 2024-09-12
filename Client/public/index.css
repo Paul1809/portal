@@ -1,165 +1,176 @@
+/* Estilos generales */
 body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      background-color: #f4f4f4;
-    }
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #f0f0f0;
+  background-color: #20232a; /* Fondo oscuro */
+}
 
-    header {
-      background-color: #ff5722;
-      color: white;
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+header {
+  background-color: #20232a;
+  color: white;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #282c34;
+}
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-    }
+/* Navegación */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
 
-    nav ul li {
-      margin: 0 15px;
-    }
+nav ul li {
+  margin: 0 15px;
+}
 
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+nav ul li a {
+  color: #61dafb; /* Color azul claro para el texto */
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    /* Barra de búsqueda */
-    .search-bar {
-      display: flex;
-      align-items: center;
-    }
+/* Barra de búsqueda */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
 
-    .search-bar input[type="text"] {
-      padding: 5px;
-      margin-right: 5px;
-    }
+.search-bar input[type="text"] {
+  padding: 8px;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
 
-    .search-bar button {
-      background-color: white;
-      color: #ff5722;
-      border: 2px solid #ff5722;
-      padding: 5px 10px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s, color 0.3s;
-    }
+.search-bar button {
+  background-color: #61dafb;
+  color: #20232a;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-    .search-bar button:hover {
-      background-color: #ff5722;
-      color: white;
-    }
+.search-bar button:hover {
+  background-color: #21a1f1;
+  color: white;
+}
 
-    /* Sección de noticias destacadas y recientes */
-    #destacadas, #recientes {
-      padding: 20px 0;
-    }
+/* Sección de noticias destacadas y recientes */
+#destacadas, #recientes {
+  padding: 40px 0;
+  background-color: #282c34;
+}
 
-    .noticias-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+.noticias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
 
-    .noticias-grid article {
-      background: white;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
+.noticias-grid article {
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-    .noticias-grid article:hover {
-      transform: scale(1.03);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
+.noticias-grid article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
 
-    .noticias-grid img {
-      width: 100%;
-      border-radius: 8px 8px 0 0;
-    }
+.noticias-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
 
-    .noticias-grid h3 {
-      font-size: 1.2rem;
-      margin: 15px 0;
-    }
+.noticias-grid h3 {
+  font-size: 1.4rem;
+  margin: 15px 0;
+  color: #61dafb;
+}
 
-    .noticias-grid p {
-      font-size: 0.9rem;
-      color: #666;
-      margin-bottom: 10px;
-    }
+.noticias-grid p {
+  font-size: 1rem;
+  color: #f0f0f0;
+  margin-bottom: 10px;
+}
 
-    .noticias-grid a {
-      text-decoration: none;
-      color: #ff5722;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
+.noticias-grid a {
+  text-decoration: none;
+  color: #21a1f1;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
-    .noticias-grid a:hover {
-      color: #d84315;
-    }
+.noticias-grid a:hover {
+  color: #61dafb;
+}
 
-    /* Lista de noticias recientes */
-    .noticias-lista {
-      list-style: none;
-      padding: 0;
-    }
+/* Lista de noticias recientes */
+.noticias-lista {
+  list-style: none;
+  padding: 0;
+}
 
-    .noticias-lista li {
-      margin-bottom: 15px;
-      padding: 10px;
-      background-color: white;
-      border-left: 4px solid #ff5722;
-      transition: background-color 0.3s;
-    }
+.noticias-lista li {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #333;
+  border-left: 4px solid #61dafb;
+  transition: background-color 0.3s;
+}
 
-    .noticias-lista li:hover {
-      background-color: #f0f0f0;
-    }
+.noticias-lista li:hover {
+  background-color: #444;
+}
 
-    .noticias-lista h3 {
-      font-size: 1rem;
-      margin-bottom: 5px;
-    }
+.noticias-lista h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #61dafb;
+}
 
-    .noticias-lista a {
-      text-decoration: none;
-      color: #ff5722;
-    }
+.noticias-lista a {
+  text-decoration: none;
+  color: #21a1f1;
+}
 
-    .noticias-lista p {
-      font-size: 0.9rem;
-      color: #666;
-    }
+.noticias-lista p {
+  font-size: 0.95rem;
+  color: #ddd;
+}
 
-    /* Pie de página */
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-    }
+/* Pie de página */
+footer {
+  background-color: #20232a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #282c34;
+}
 
-    .social-media img {
-      width: 24px;
-      margin: 0 10px;
-    }
+.social-media img {
+  width: 24px;
+  margin: 0 10px;
+  filter: invert(1); /* Invertir colores para mejor contraste */
+}
